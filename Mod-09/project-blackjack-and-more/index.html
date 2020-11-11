@@ -1,5 +1,5 @@
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,6 +61,44 @@
                 <button class="btn btn-danger" >Yahoo!</button>
                 <button class="btn btn-warning">Google!</button>
                 <button class="btn btn-success">Facebook!</button>
+            </div>
+        </div>
+
+        <div class="challenge5">
+            <h2>Challenge 5: Blackjack</h2>
+            <div class="challenge5-flexbox">
+                <div id="bjResultMessage" class="result">Let's play!</div>
+                <div class="playArea">
+                    <div class="wrapperAreaGreen">
+                        <div class="playerArea">
+                            <div class="blackjack-title-player">You: <span id="playerTitleAndResult">0</span></div>
+                            <div id="playerCardContainer"></div>
+                        </div>
+                        <div class="dealerArea">
+                            <div class="blackjack-title-player">Dealer: <span id="dealerTitleAndResult">0</span></div>
+                            <div id="dealerCardContainer"></div>
+                        </div>
+                        <div class="actionControls">
+                            <button id="btn-blackjack-hit" class="btn btn-primary">Hit</button>
+                            <button id="btn-blackjack-stand" class="btn btn-warning">Stand</button>
+                            <button id="btn-blackjack-deal" class="btn btn-danger">Deal</button>
+                        </div>
+                    </div>
+                    <div class="statisticWrapper">
+                        <table>
+                            <tr>
+                                <th>Wins</th>
+                                <th>Losses</th>
+                                <th>Draws</th>
+                            </tr>
+                            <tr>
+                                <td><span id="bjWinStatistic">0</span></td>
+                                <td><span id="bjLossStatistic">0</span></td>
+                                <td><span id="bjDrawStatistic">0</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
 
