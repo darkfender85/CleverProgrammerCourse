@@ -50,15 +50,15 @@ It needs to follow a class structure like this:
 
     User Twitter Handel: font-size: 8px
 
-## TODO(Together): Create HTML and Style for Trending Box
+## DONE(Together): Create HTML and Style for Trending Box
 
-### TODO: Complete styling for list of trends
+### DONE: Complete styling for list of trends
 
 #### HINTS:
 
     List Item: padding-left: 20px; padding-top and bottom: 8px
 
-## TODO(API): Set up NodeJS Server
+## DONE(API): Set up NodeJS Server
 
 Return `Hello World` for the root `/` get request
 
@@ -72,7 +72,7 @@ Console log the data
 
 Return as a response
 
-## TODO(API): Create Twitter `get()` helper function to move the Twitter API logic
+## DONE(API): Create Twitter `get()` helper function to move the Twitter API logic
 
 #### HINTS:
 
@@ -82,7 +82,7 @@ Return as a response
     - Import Twitter class in `app.js` with `const twitter = new Twitter();`
     - Initialize and use the `twitter` object to now do somethong like `twitter.get(...).then(...).catch(...)`
 
-## TODO(API, TOGETHER): Move the API Token to .env file and import it
+## DONE(API, TOGETHER): Move the API Token to .env file and import it
 
 ## TODO: Complete `getTwitterData()` function to retrieve data from our API
 

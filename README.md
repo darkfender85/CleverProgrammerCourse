@@ -3,11 +3,3 @@
 Module 9: Blackjack App
 
 Module 10: Twitter Clone
-API Keys
-J84ScbQ5kVSkPlNovzsmMWyCr
-
-API Secret Key
-jJVOOgdxHUiT1IEFF0r5aAPfYEdIcW81PFbCPQpscx3sJnp0Vr
-
-API Bearer token
-AAAAAAAAAAAAAAAAAAAAAO6eJgEAAAAAoXNfA8TeX50lh0b1UYCvSUJfk%2BM%3DT13RbJ0pDAAL1JvPz6e6g3yLYENqXB2bfxFzBRXa5uBMcr93jn
