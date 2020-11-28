@@ -64,7 +64,7 @@ Return `Hello World` for the root `/` get request
 
 [Example](https://expressjs.com/en/starter/hello-world.html)
 
-## TODO(API, TOGETHER): Create API endpoint `/tweeets` to return a list of tweets based on query
+## DONE(API, TOGETHER): Create API endpoint `/tweeets` to return a list of tweets based on query
 
 Use [axios](https://github.com/axios/axios) for making an API request to Twitter API
 
@@ -84,7 +84,7 @@ Return as a response
 
 ## DONE(API, TOGETHER): Move the API Token to .env file and import it
 
-## TODO: Complete `getTwitterData()` function to retrieve data from our API
+## DONE: Complete `getTwitterData()` function to retrieve data from our API
 
 For now, I want you to use the following static url to get data from api:
 
@@ -96,7 +96,7 @@ For now, I want you to use the following static url to get data from api:
     - Call function on load of js
     - Console log response
 
-## TODO: Get search input and use it to build a `url` like the one above
+## DONE: Get search input and use it to build a `url` like the one above
 
 This time you are building a dynamic url that will change based on the user's search input
 
@@ -106,10 +106,10 @@ This time you are building a dynamic url that will change based on the user's se
     - Use string literals to build out the url
     - Console log response
 
-### TODO(Together): Get twitter data when a user hits enter
+### DONE(Together): Get twitter data when a user hits enter
 
 
-## TODO: Complete `buildTweets()` function to show the Tweets List(only text)
+## DONE: Complete `buildTweets()` function to show the Tweets List(only text)
 
 #### HINTS:
 
@@ -118,22 +118,22 @@ This time you are building a dynamic url that will change based on the user's se
     - Use string literals to replace html with the text from each tweet
     - Replace html content inside `.tweets-list`
 
-## TODO: Add abiliy to show images in the tweets
+## DONE: Add abiliy to show images in the tweets
 
 #### HNTS:
 
     - Use `buildImages()` function
     - Check if there is media using `.length`property to call `buildImages()` function
 
-## TODO(Together): Add ability to show videos in the tweets
+## DONE(Together): Add ability to show videos in the tweets
 
-## TODO(Together): Add ability to show gifs in the tweets
+## DONE(Together): Add ability to show gifs in the tweets
 
-## TODO: Show user info in the tweets
+## DONE: Show user info in the tweets
 
-## TODO(Together): Use [moment.js](https://momentjs.com/) to show the date of tweet
+## DONE(Together): Use [moment.js](https://momentjs.com/) to show the date of tweet
 
-## TODO: Complete `selectTrend()` function to allow a user to click on the trend and search for it
+## DONE: Complete `selectTrend()` function to allow a user to click on the trend and search for it
 
 #### HINTS:
 
@@ -142,7 +142,7 @@ This time you are building a dynamic url that will change based on the user's se
     - Set the value of input search using the text
     - Call `getTwitterData()` function
 
-## TODO: Create HTML and Style for Next Page Button
+## DONE: Create HTML and Style for Next Page Button
 
 #### HINTS:
 
@@ -150,19 +150,19 @@ This time you are building a dynamic url that will change based on the user's se
     - border-radius: 20px; margin-top: 20px;
     - Use arrow down font awesome icon
 
-## TODO(Together): Showing Next Page of Tweets
+## DONE(Together): Showing Next Page of Tweets
 
-### TODO: Save Next Page Url
+### DONE: Save Next Page Url
 
-### TODO: Load tweets when selecting the next page button
+### DONE: Load tweets when selecting the next page button
 
 [Here](https://developer.twitter.com/en/docs/tweets/timelines/guides/working-with-timelines) is how twitter pagination works
 
-### TODO(API): ...something that has to do with `max_id`
+### DONE(API): ...something that has to do with `max_id`
 
-### TODO: Fix logic to replace tweets when searching, but append tweets when going to next page
+### DONE: Fix logic to replace tweets when searching, but append tweets when going to next page
 
-### TODO: Show next page button only when there is a next page
+### DONE: Show next page button only when there is a next page
 
 ## TODO: Clean Up
 
