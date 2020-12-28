@@ -3,6 +3,10 @@ body{
     height: 562px;
 }
 
+.main{
+    height: 100%;
+}
+
 .greeting {
     height: 50px;
 }
