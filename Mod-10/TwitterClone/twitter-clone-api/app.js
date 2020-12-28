@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+const port = 3100;
 const Twitter = require('./api/helpers/twitter');
 const twitter = new Twitter();
 
