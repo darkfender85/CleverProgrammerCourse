@@ -9,7 +9,7 @@ function Main() {
 
   return (
     <div className="App-main">
-      <CartItems items={cartItems} />
+      <CartItems items={cartItems} setCart={setCartItems} />
       <CartTotal items={cartItems} />
     </div>
   );
