@@ -1,29 +1,31 @@
 import React from "react";
 import "./CartItem.css";
 
-function CartItem() {
+function CartItem({ title, stock, image, price, quantity }) {
+  console.log(arguments);
   return (
     <div className="CartItem">
       <div className="CartItem-image">
-        <img src="/items/item-1.jpg" />
+        <img src={"/items/" + image} />
       </div>
       <div className="CartItem-info">
         <div className="info-title">
-          <h2>Apple iPad Pro Max</h2>
+          <h2>{title}</h2>
         </div>
-        <div className="info-stock">In Stock</div>
+        <div className="info-stock">{stock}</div>
         <div className="item-actions">
           <div className="item-quantity">
-            <select>
+            <select value={quantity}>
               <option value="1">Q.ty 1</option>
               <option value="2">Q.ty 2</option>
               <option value="3">Q.ty 3</option>
             </select>
           </div>
-          <div className="item-delete"></div>
+          <div className="item-actions-divider">|</div>
+          <div className="item-delete">Delete</div>
         </div>
       </div>
-      <div className="CartItem-price">$ 799.00</div>
+      <div className="CartItem-price">$ {price}</div>
     </div>
   );
 }

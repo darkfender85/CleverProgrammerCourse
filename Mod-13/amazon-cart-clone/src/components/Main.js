@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import CartTotal from "./CartTotal";
 import CartItems from "./CartItems";
 import "./Main.css";
+import data from "./../Data";
 
 function Main() {
+  const [cartItems, setCartItems] = useState(data);
+
   return (
     <div className="App-main">
-      <CartItems />
-      <CartTotal />
+      <CartItems items={cartItems} />
+      <CartTotal items={cartItems} />
     </div>
   );
 }
