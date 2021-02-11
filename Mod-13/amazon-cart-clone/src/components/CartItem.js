@@ -32,7 +32,13 @@ function CartItem({
             </select>
           </div>
           <div className="item-actions-divider">|</div>
-          <div className="item-delete">Delete</div>
+          <div
+            className="item-delete"
+            value={0}
+            onClick={(e) => changeItemQuantity(e, index)}
+          >
+            Delete
+          </div>
         </div>
       </div>
       <div className="CartItem-price">$ {price}</div>

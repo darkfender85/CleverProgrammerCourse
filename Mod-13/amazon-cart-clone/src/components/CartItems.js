@@ -5,7 +5,8 @@ import "./CartItems.css";
 function CartItems({ items, setCart }) {
   const changeItemQuantity = (event, itemIndex) => {
     let value = event.target.value;
-    items[itemIndex].quantity = value;
+    if (value) items[itemIndex].quantity = value;
+    else items.splice(itemIndex, 1);
     setCart([...items]);
   };
 
