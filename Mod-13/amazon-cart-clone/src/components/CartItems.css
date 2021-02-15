@@ -1,0 +1,12 @@
+.CartItems {
+    flex: 0.8;
+    background-color: white;
+    margin-right: 18px;
+    padding: 20px;
+    text-align: left;
+}
+
+.CartItems-items{
+    display: flex;
+    flex-direction: column;
+}

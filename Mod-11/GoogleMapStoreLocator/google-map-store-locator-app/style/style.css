@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#map{
+    width: 100vw;
+    height: 100vh;
+}
+
+/*Header*/
+
+.title-header {
+    position: absolute;
+    top: 150px;
+    left: -600px;
+    font-size: 80px;
+    z-index: 5;
+    transition: left 2s ease-in;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.title-header-span {
+    background-color: cadetblue;
+    color: white;
+    padding: 0px 18px 0px 60px;
+    font-size: 90px;
+}
+
+/*wrappping input and list*/
+
+.wrapper-content-listing {
+    position: absolute;
+    left: 0;
+    top: 275px;
+    bottom: 0;
+    z-index: 3;
+    opacity: 0;
+    transition: all 1s ease-in;
+}
+
+.search-container{
+    margin: 30px;
+    width: 440px;
+    height: 60px;
+    background-color:#454E53;  
+    border-radius: 44px;
+    display: flex;
+    align-items: center;
+}
+
+.search-container input{
+    border: none;
+    background-color: transparent;
+    height:44px;
+    margin-left:25px;
+    flex: 1;
+    font-size: 26px;
+    line-height: 44px;
+    color: white;
+    outline: none !important;
+}
+
+.search-container .fa-search-location{
+    font-size: 28px;
+    margin: 10px 20px;
+    margin-left: 8px;
+    color: white;
+}
+
+/* STYLE LIST */
+.wrap-list {
+    background-color: #454E53;
+    width: 440px;
+    position: absolute;
+    left: 30px;
+    border: 1px solid #979797;
+    border-radius: 44px;
+    top: 125px;
+    bottom: 80px;
+    overflow-y: scroll;
+    display: flex;
+}
+
+.stores-list {
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-grow: 1;
+}
+
+.store-container{
+    border-bottom: 1px solid #979797;
+    margin: 10px 25px;
+}
+
+.list-item {
+    padding: 20px;
+    color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    margin: 10px;
+    border-radius:35px;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.list-item:hover{
+    background-color: #888;
+}
+
+.list-item:hover .store-index{
+    background-color: #383838;
+}
+
+.store-name {
+    font-size: 24px;
+    text-overflow: ellipsis;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.store-address-line-one,.store-address-line-two{
+    font-size: 20px;
+    color: #f1f1f1;
+}
+
+.store-phone-number{
+    font-size: 16px;
+    columns: #f6f6f6;
+    margin-top: 10px;
+}
+
+.store-index {
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 5px;
+    top: 38%;
+    background-color: #979797;
+}
+
+.intro,.no-stores-found {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.enter-zip,.no-stores-found {
+    color: #e1e1e1;
+    font-size: 20px;
+}
+
+.find-stores {
+    margin-top: 10px;
+    font-size: 22px;
+    color: cadetblue;
+    font-weight: 600;
+}
+
+.no-stores-found{
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+
+/** STYLE SCROLLBAR **/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    display:none;
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  }
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #AAA; 
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  }
+
+
+  /* MARKER WINDOW INFO */
+  .window-store-info-wrapper{
+      height: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: start;
+      padding: 0 10px;
+      margin-right: 12px;
+  }
+
+  .store-info-title{
+      font-size: 22px;
+      font-weight: 600;
+  }
+
+  .store-info-open-status{
+      font-size: 14px;
+      font-weight: 500;
+      color: #454E53;
+      border-bottom: 1px solid lightslategray;
+  }
+
+  .store-info-address,.store-info-phone{
+      font-size: 16px;
+      text-decoration: none !important;
+      color: initial;
+  }
+
+  .store-info-address:before,.store-info-phone:before{
+    font-weight: 900;
+    line-height: 25px;
+    color: white;
+    background-color: #4a80f5;
+    font-size: 13px;
+    text-align:center;
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 5px;
+    display: inline-block;
+}
+
+  .store-info-address:before{
+    font-family: "Font Awesome 5 Free";
+    content:"\f124";
+  }
+
+  .store-info-phone:before{
+    font-family: "Font Awesome 5 Free";
+    content:"\f095";
+  }

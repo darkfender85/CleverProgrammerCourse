@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Title</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div id="header" class="title-header">
+      <div class="wrapper-title">
+        <span class="title-header-span">S</span>tore Locator
+      </div>
+    </div>
+    <div class="wrapper-content-listing">
+      <div class="search-container">
+        <input
+          onkeyup="onInputEnter(event)"
+          type="text"
+          name=""
+          id="zipAddress"
+          placeholder="CAP oppure Indirizzo"
+        />
+        <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+        <span onclick="getStores()" class="fas fa-search-location"></span>
+      </div>
+      <div class="wrap-list">
+        <div class="stores-list">
+          <div class="intro">
+            <span class="enter-zip">Enter a zip code or an address</span>
+            <span class="find-stores">Find stores near you</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="map"></div>
+    <script src="js/index.js" await defer></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARn90OdnCKiOWeJ0E-zZsi_P5fM-cCJzE&callback=initMap&libraries=places&v=weekly"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/style.css">
+    <title>Javascript on steroid</title>
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="challenge1">
+            <h2>Challenge 1: Your age in days</h2>
+            <div class="challenge1-flexbox">
+                <button class="btn btn-primary" id="btnCheckAge">Click me</button>
+                <button class="btn btn-danger" id="btnResetAge">Reset</button>
+            </div>
+            <div id="challenge1-result"></div>
+        </div>
+
+        <div class="challenge2">
+            <h2>Challenge 2: Cat generator</h2>
+            <div class="challenge2-flexbox">
+                <button class="btn btn-success" onclick="generateCat()">Generate cat</button>
+                <button class="btn btn-danger" onclick="resetCatContainer()">Reset</button>
+            </div>
+            <div id="challenge2Result" class="challenge2-result flexbox-result">
+            </div>
+        </div>
+
+        <div class="challenge3">
+            <h2>Challenge 3: Rock, Paper, Scissors</h2>
+            <div id="rpsOptionsWrap" class="challenge3-flexbox">
+                <img id="rock" src="assets/rock.png" alt="" onclick="rpsGame(this)">
+                <img id="paper" src="assets/paper.png" alt="" onclick="rpsGame(this)">
+                <img id="scissors" src="assets/scissors.png" alt="" onclick="rpsGame(this)">
+            </div>
+            <div id="challenge3Result" class="challenge3-result flexbox-result not-visible">
+                <img id="humanChoice" src="assets/rock.png">
+                <div id="resultMessage">You Won!</div>
+                <img id="botChoice" src="assets/scissors.png" alt="">
+                
+            </div>
+            <div id= "tryButtonWrap" class="wrap-button not-visible"><button class="btn btn-primary" onclick="toggleResultChallenge3()">Try again</button></div>
+        </div>
+
+        <div class="challenge4">
+            <h2>Challenge 4: Changing the color of all buttons</h2>
+            <div class="challenge2-flexbox">
+                <form action="">
+                    <select name="" id="background" onchange="buttonColorChange(this)">
+                        <option value="random">Random</option>
+                        <option value="red">Red</option>
+                        <option value="green">Green</option>
+                        <option value="reset">Reset</option>
+                    </select>
+                </form>
+                <button class="btn btn-primary">Wee!</button>
+                <button class="btn btn-danger" >Yahoo!</button>
+                <button class="btn btn-warning">Google!</button>
+                <button class="btn btn-success">Facebook!</button>
+            </div>
+        </div>
+
+        <div class="challenge5">
+            <h2>Challenge 5: Blackjack</h2>
+            <div class="challenge5-flexbox">
+                <div id="bjResultMessage" class="result">Let's play!</div>
+                <div class="playArea">
+                    <div class="wrapperAreaGreen">
+                        <div class="playerArea">
+                            <div class="blackjack-title-player">You: <span id="playerTitleAndResult">0</span></div>
+                            <div id="playerCardContainer"></div>
+                        </div>
+                        <div class="dealerArea">
+                            <div class="blackjack-title-player">Dealer: <span id="dealerTitleAndResult">0</span></div>
+                            <div id="dealerCardContainer"></div>
+                        </div>
+                        <div class="actionControls">
+                            <button id="btn-blackjack-hit" class="btn btn-primary">Hit</button>
+                            <button id="btn-blackjack-stand" class="btn btn-warning">Stand</button>
+                            <button id="btn-blackjack-deal" class="btn btn-danger">Deal</button>
+                        </div>
+                    </div>
+                    <div class="statisticWrapper">
+                        <table>
+                            <tr>
+                                <th>Wins</th>
+                                <th>Losses</th>
+                                <th>Draws</th>
+                            </tr>
+                            <tr>
+                                <td><span id="bjWinStatistic">0</span></td>
+                                <td><span id="bjLossStatistic">0</span></td>
+                                <td><span id="bjDrawStatistic">0</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <script src="src/module-project.js"></script>
+</body>
+</html>
